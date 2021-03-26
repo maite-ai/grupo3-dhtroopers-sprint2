@@ -11,12 +11,22 @@ header {
     background-color: #d3e0dc;
 }
 
+.contenedor {
+    display: flex;
+}
+
 h1 {
     color: #03506f;
 }
 
 main {
     background-color: #f8f1f1;
+}
+
+.enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
 }
 
 footer {
