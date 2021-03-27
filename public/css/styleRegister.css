@@ -1,140 +1,133 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Saira Stencil One', cursive;
 }
 
-.registro{
+.registro {
     border: 2px solid black;
     border-radius: 8px;
     max-width: 800px;
-    margin:10px;
+    margin: 10px;
     padding: 10px;
     align-items: center;
 }
-    .title{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        top: calc(50% - 60px/2 - 294px);
-        
-        background: #141313;
-        border-radius: 8px; 
-    }
 
-        .labelTitle{
-            font-style:normal;
-            font-weight:normal;
-            font-size: 38px;
-            line-height: 46px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            letter-spacing: 0.2em;
-            color: #25D708;
-        }
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    top: calc(50% - 60px/2 - 294px);
+    background: #141313;
+    border-radius: 8px;
+}
 
-    .formulario{
+.labelTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #25D708;
+}
+
+.formulario {
     display: flex;
     flex-wrap: wrap;
     margin: 15x;
     padding: 10px;
     justify-content: center;
+}
 
-    }
+.name,
+.lastName,
+.age,
+.address,
+.rePassword {
+    display: flex;
+    flex-flow: column;
+    width: 550px;
+    margin: 8px;
+}
 
-        .name,
-        .lastName,
-        .age,
-        .address,
-        .rePassword {
-            display: flex;
-            flex-flow: column;
-            width: 550px;
-            margin: 8px;
-        }
+.email {
+    display: flex;
+    flex-flow: column;
+    width: 550px;
+    margin: 10px;
+    margin-top: 20px;
+}
 
-        .email {
-            display: flex;
-            flex-flow: column;
-            width: 550px;
-            margin: 10px;
-            margin-top: 20px;
-        }
+.password {
+    display: flex;
+    flex-flow: column;
+    width: 550px;
+    margin: 10px;
+    margin-top: 20px;
+}
 
-        .password {
-            display: flex;
-            flex-flow: column;
-            width: 550px;
-            margin: 10px;
-            margin-top: 20px;
-        }
+.labelName,
+.labelLastName,
+.labelAge,
+.labelAddress,
+.labelEmail,
+.labelPassword,
+.labelRePassword {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 3px;
+}
 
-            .labelName,
-            .labelLastName,
-            .labelAge,
-            .labelAddress,
-            .labelEmail,
-            .labelPassword,
-            .labelRePassword {
-                font-family: Roboto;
-                font-style:normal;
-                font-weight:bold;
-                font-size: 16px;
-                line-height: 19px;
-                color: #000000;
-                margin-bottom: 3px;
-            }
+.inputName,
+.inputLastName,
+.inputAge,
+.inputAddress,
+.inputEmail,
+.inputPassword,
+.inputRePassword {
+    font-family: Roboto;
+    height: 35px;
+    padding-left: 10px;
+    border: 1, 3px solid rgba(14, 13, 13, 0.3);
+    border-radius: 8px;
+}
 
-            .inputName,
-            .inputLastName,
-            .inputAge,
-            .inputAddress,
-            .inputEmail,
-            .inputPassword,
-            .inputRePassword {
-                font-family: Roboto;
-                height: 35px;
-                padding-left: 10px;
-                border: 1,3px solid rgba(14, 13, 13, 0.3);
-                border-radius: 8px;
-            }
+.button {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
-        .button{
-            margin-top: 10px;
-            margin-bottom: -10px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-             }   
+.btn {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: #0C0C0C;
+    color: #06F82C;
+    border-radius: 8px;
+}
 
-            .btn{
-                font-style: normal;
-                font-weight: normal;
-                font-size: 24px;
-                width: 150px;
-                height: 40px;
-                text-align: center;
-                background-color: #0C0C0C;
-                color: #06F82C;
-                border-radius: 8px;             
-            }
-
-
-@media (min-width: 780px){
-    .registro{
+@media (min-width: 780px) {
+    .registro {
         margin: auto;
-     
     }
-    
-    .formulario{
-              
-    }
-
+    .formulario {}
     .name,
     .lastName,
     .age,
@@ -142,16 +135,10 @@
         width: 340px;
         margin: 10px;
     }
-
     .email,
     .password,
     .rePassword {
         width: 700px;
     }
-
-    
-    .button{
-
-    }
- 
+    .button {}
 }

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 * {
     font-family: Roboto, sans-serif, arial, helvetica;
 }
@@ -8,27 +10,31 @@ body {
 }
 
 header {
-    background-color: #d3e0dc;
+    background-color: #180A41;
+    color: white;
 }
 
-.contenedor {
+.caja-logo-busqueda {
     display: flex;
-}
-
-h1 {
-    color: #03506f;
+    font-family: 'Chakra Petch', arial;
 }
 
 main {
     background-color: #f8f1f1;
 }
 
-.enlaces {
+.enlaces a {
+    font-family: 'Chakra Petch', arial;
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
 footer {
-    background-color: #d3e0dc;
+    background-color: #180A41;
+    color: white;
+    display: flex;
+    align-items: center;
 }
