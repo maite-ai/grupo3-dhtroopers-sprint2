@@ -7,7 +7,6 @@ Ofrece las mejores marcas de los mismos.
 
 Los productos ofrecidos son aquellos conocidos como periféricos (de entrada y de salida), es decir, componentes o partes del equipo de la computadora que permiten introducir datos o información a la misma para que ésta los procese y/u ordene.
 
-![Logo de DH-Troopers](logo-grupo.gif)
 
 ## ¿A quiénes va dirigido?
 
@@ -75,5 +74,4 @@ let grupo = [{
 }];
 ```
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+![Logo de DH-Troopers](logo-grupo.gif)
