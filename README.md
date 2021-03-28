@@ -1,3 +1,5 @@
+![Logo de la página](peri-logo.gif)
+
 # PeriTroopers.com.ar
 
 El sitio está dedicado a la venta de insumos informáticos, especialmente **accesorios y periféricos**.
@@ -73,5 +75,7 @@ let grupo = [{
     apodo: "Pei"
 }];
 ```
+
+¿Quiere ver como trabajamos? Visite [nuestro tablero](https://trello.com/b/RuL65fGS/sprint-2) en Trello.
 
 ![Logo de DH-Troopers](logo-grupo.gif)

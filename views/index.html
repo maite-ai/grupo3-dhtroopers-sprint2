@@ -13,48 +13,48 @@
     <header>
         <div class="caja-logo-busqueda">
             <img src="images/logo1.gif" class="logo" alt="Logo Peritroopers" width="250">       
+            <article class="busqueda-boton">
+                <div class="caja-cuadro">
+                    <form action="" class="cuadro-busqueda" method="post" target="_blank">
+                        <input type="search" placeholder="Busque por marcas, productos, etc." size="30px" class="casillero">
+                    </form>
+                </div>
+                <div class="caja-boton">
+                    <button type="submit" class="boton"><i class="fas fa-search"></i></button>
+                </div>
+            </article>
+            <div class="caja-carrito">
+                <a href="./productCart.html">Carrito <i class="fas fa-shopping-cart"></i></a>
+            </div>
         </div>
         <br>
 
-        <article class="busqueda">
-            <div class="caja-cuadro">
-                <form action="" class="cuadro-busqueda" method="post" target="_blank">
-                    <input type="search" placeholder="Buscar productos, marcas, etc." size="30px" class="casillero">
-                </form>
-            </div>
-            <div class="caja-boton">
-                <button type="submit" class="boton"><i class="fas fa-search"></i></button>
-            </div>
-        </article>
-        <br>
-        
-        <section>
-            <nav class="navbar navbar-fixed-top">
-                <ul type="none" class="enlaces">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Catálogo</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
+        <section class="contenedor-links">
+            <nav class="navbar">
+                <ul type="none" class="barra-nav1">
+                    <li class="seccion-home"><a href="#">Home</a></li>
+                    <li class="seccion-catalogo"><a href="#">Catálogo</a></li>
+                    <li class="seccion-ayuda"><a href="#">Ayuda</a></li>
                 </ul>
-                <ul type="none" class="enlaces">
-                    <li><a href="#">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Carrito <i class="fas fa-shopping-basket"></i></a></li>
+                <ul type="none" class="barra-nav2">
+                    <li class="seccion-registro"><a href="./register.html">Creá tu cuenta </a></li>
+                    <li class="seccion-login"><a href="./login.html">Ingresá </a></li>
                 </ul>
             </nav>
             <div class="contenedor-burger">
                 <span class="burger-menu">
-                    <i class="fa fa-bars burger"></i>
+                    <a href=""><i class="fa fa-bars burger"></i></a>
                 </span>
             </div>
         </section>
 
-        <section>
-            Carrousel de imágenes
-        </section>
+        
     </header>
      
     <main>
+        <section>
+            Carrousel de imágenes
+        </section>
         <section>
             <h2>Basado en tu última visita</h2>
             <article class="tarjeta">
@@ -160,6 +160,7 @@
                     un beneficio de MercadoPuntos</p>
                 </div>
             </article>
+            
         </section>
         <section>
             <article>
