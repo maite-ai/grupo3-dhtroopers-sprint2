@@ -6,16 +6,54 @@
         <meta name="viewport" content="width=, initial-scale=1.0">
         <title>Peritroopers</title>
         <link rel="stylesheet" href="css/faq.css">
+        <link rel="stylesheet" href="css/clear-mode.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
     </head>
 <body>
     <header>
+        <div class="caja-logo-busqueda">
+            <article class="busqueda-boton">
+                <div class="caja-cuadro">
+                    <form action="" class="cuadro-busqueda" method="post" target="_blank">
+                        <input type="search" placeholder="Busque por marcas, productos, etc." size="30px" class="casillero">
+                    </form>
+                </div>
+                <div class="caja-boton">
+                    <button type="submit" class="boton"><i class="fas fa-search"></i></button>
+                </div>
+            </article>
+            <article class="logo">
+                <img src="images/logo1.gif" alt="Logo Peritroopers" width="250">  
+            </article>
+            <article class="cart-heart">
+                <div class="caja-carrito">
+                    <a href="./productCart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <div class="caja-favorites">
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                </div>
+            </article>
+        </div>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
+                </ul>
+                <ul type="none" class="barra-nav2">
+                    <li class="seccion-registro"><a href="./register.html">Creá tu cuenta </a></li>
+                    <li class="seccion-login"><a href="./login.html">Ingresá </a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <div class="contenedor-burger">
+                <span class="burger-menu">
+                    <a href=""><i class="fa fa-bars burger"></i></a>
+                </span>
+            </div>
+        </section>
+
+        
     </header>
     <main>
         <section class="faq-container">
@@ -72,11 +110,62 @@
         </section>
     </main>
     <footer>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <section>
+            <article class="contactus-container">
+                <h3>Contactanos</h3>
+                <div class="contact-form">
+                    <form action="" method="POST">
+                        <div>
+                            <label>Nombre</label><br>
+                            <input type="text" placeholder="Carlos Perez" name="nombre" class="nombre">
+                        </div>
+                        <div>
+                            <label>Correo electrónico</label><br>
+                            <input type="email" placeholder="usuario@ejemplo.com" name="email" class="email">
+                        </div>
+                        <div>
+                            <textarea type="text" placeholder="Escriba su comentario..." rows="10" name="comentario" class="comentario"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="send" value="Enviar">Enviar consulta</button>
+                            <button type="reset" class="clean" value="Cancelar">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <section  class="data">
+            <article>
+                <div>
+                    <span><i class="far fa-building"></i> Av. Rivadavia N° 3454 Piso 3</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-envelope-open-text"></i> contacto@peritroopers.com.ar</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-phone-alt"></i> 4117-5794</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-map-marker-alt"></i> Ciudad Autónoma de Buenos Aires</span>
+                </div>
+            </article>
+            
+        </section>
+        <section  class="social-media">
+            <article>
+                <div class="socialIcons">
+                    <li class="facebook"><a href="https://www.facebook.com"><i class="fab fa-facebook" ></i>Facebook</a></li>
+                    <li class="twitter"><a href="https://www.twitter.com"><i class="fab fa-twitter" ></i>Twitter</a></li>
+                    <li class="instagram"><a href="https://instagram.com"><i class="fab fa-instagram" ></i>Instagram</a></li>
+                    <li class="whatsapp"><a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
+                </div>
+            </article>
+        </section>
+        <section class="copyright">
+            <article class="texto">
+                <h5>Copyright © 2021 DH-Troopers</h5>
+            </article>
+        </section>
     </footer>
 </body>
 </html>
