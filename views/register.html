@@ -15,46 +15,52 @@
 
 <body>
     <header>
-        <div class="caja-logo-busqueda">
-            <img src="images/logo1.gif" class="logo" alt="Logo Peritroopers" width="250">
-        </div>
-        <br>
+        <section class="caja-logo-busqueda">
+            <article class="cart-heart">
+                <div class="caja-carrito">
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="caja-favorites">
+                    <a href="./#populares"><i class="fas fa-heart heart"></i></a>
+                </div>
+            </article>
+            
+            <article class="logo">
+                <div class="logo-box-normal">
+                    <img src="images/logo1.gif" alt="Logo Peritroopers" width="250"> 
+                </div> 
+                <div class="logo-box-reduced">
+                    <img src="images/logo-cortado.gif" alt="Logo Peritroopers" width="150"> 
+                </div> 
+            </article>
 
-        <article class="busqueda">
-            <div class="caja-cuadro">
-                <form action="" class="cuadro-busqueda" method="post" target="_blank">
-                    <input type="search" placeholder="Buscar productos, marcas, etc." size="30px" class="casillero">
-                </form>
-            </div>
-            <div class="caja-boton">
-                <button type="submit" class="boton"><i class="fas fa-search"></i></button>
-            </div>
-        </article>
-        <br>
-
-        <section>
-            <nav class="navbar navbar-fixed-top">
-                <ul type="none" class="enlaces">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Catálogo</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-                <ul type="none" class="enlaces">
-                    <li><a href="#">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Carrito <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
-            </nav>
-            <div class="contenedor-burger">
-                <span class="burger-menu">
-                    <i class="fa fa-bars burger"></i>
-                </span>
-            </div>
-        </section>
-
-        <section>
-            Carrousel de imágenes
+            <article class="busqueda-boton">
+                <div class="caja-cuadro">
+                    <form action="" class="cuadro-busqueda" method="post" target="_blank">
+                        <input type="search" placeholder="Busque por marcas, productos, etc." size="30px" class="casillero">
+                    </form>
+                </div>
+                <div class="caja-boton">
+                    <button type="submit" class="boton"><i class="fas fa-search"></i></button>
+                </div>
+                <nav class="navbar">
+                    <ul type="none" class="barra-nav1">
+                
+                        <li class="seccion-home"><a href="./">Home</a></li>
+                        <li class="seccion-catalogo"><a href="#">Catálogo</a></li>
+                        <li class="seccion-ayuda"><a href="#">Ayuda</a></li>
+                    </ul>
+                    <ul type="none" class="barra-nav2">
+                        <li class="seccion-registro"><a href="./register">Creá tu cuenta </a></li>
+                        <li class="seccion-login"><a href="./login">Ingresá </a></li>
+                    </ul>
+                </nav>
+                <div class="contenedor-burger">
+                    <span class="burger-menu">
+                        <a href=""><i class="fa fa-bars burger"></i></a>
+                    </span>
+                </div>
+            </article> 
         </section>
     </header>
     <main class="main-register">
@@ -106,49 +112,64 @@
         </form>
      </section>
     </main> 
-    <footer class="busqueda">
+    <footer>
         <section>
-            <article>
-                <div>
-                    <i class="fas fa-credit-card icono"></i>
-                </div>
-                <div class="texto">
-                    <h3>Pagá con tarjeta o en efectivo</h3>
-                    <p>Con MercadoLiebreCash tenés cuotas sin<br>
-                    interés con tarjeta o efectivo en puntos de<br>
-                    pago. ¡Y siempre es seguro</p>
+            <article class="contactus-container">
+                <h3>Contactanos</h3>
+                <div class="contact-form">
+                    <form action="" method="POST">
+                        <div>
+                            <label>Nombre</label><br>
+                            <input type="text" placeholder="Carlos Perez" name="nombre" class="nombre">
+                        </div>
+                        <div>
+                            <label>Correo electrónico</label><br>
+                            <input type="email" placeholder="usuario@ejemplo.com" name="email" class="email">
+                        </div>
+                        <div>
+                            <textarea type="text" placeholder="Escriba su comentario..." rows="10" name="comentario" class="comentario"></textarea>
+                        </div>
+                        <div class="botones">
+                            <button type="submit" class="send" value="Enviar">Enviar consulta</button>
+                            <button type="reset" class="clean" value="Cancelar">Cancelar</button>
+                        </div>
+                    </form>
                 </div>
             </article>
         </section>
-        <section>
+        <section  class="data">
             <article>
-                <div>
-                    <i class="fas fa-gift icono"></i>
+                <div class="data-item">
+                    <span><i class="far fa-building"></i> Av. Rivadavia N° 3454 Piso 3</span>
                 </div>
-                <div class="texto">
-                    <h3>Envío gratis desde los $ 2.500</h3>
-                    <p>Solo por estar registrad@ en MercadoLiebre<br>
-                    tenés envíos gratis en miles de productos. Es<br>
-                    un beneficio de MercadoPuntos</p>
+                <div class="data-item">
+                    <span><i class="fas fa-envelope-open-text"></i> contacto@peritroopers.com.ar</span>
+                </div>
+                <div class="data-item">
+                    <span><i class="fas fa-phone-alt"></i> 4117-5794</span>
+                </div>
+                <div class="data-item">
+                    <span><i class="fas fa-map-marker-alt"></i> Ciudad Autónoma de Buenos Aires</span>
+                </div>
+                <div class="data-item-faq">
+                    <span><a href="./faq" class="faq-item">Preguntas Frecuentes</a></span>
                 </div>
             </article>
+            
         </section>
-        <section>
+        <section  class="social-media">
             <article>
-                <div>
-                    <i class="fas fa-user-shield icono"></i>
-                </div>
-                <div class="texto">
-                    <h3>Seguridad de principio a fin</h3>
-                    <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre<br>
-                    no hay nada que no puedas hacer porque<br>
-                    estás siempre protegid@</p>
+                <div class="socialIcons">
+                    <li class="facebook"><a href="https://www.facebook.com"><i class="fab fa-facebook" ></i>Facebook</a></li>
+                    <li class="twitter"><a href="https://www.twitter.com"><i class="fab fa-twitter" ></i>Twitter</a></li>
+                    <li class="instagram"><a href="https://instagram.com"><i class="fab fa-instagram" ></i>Instagram</a></li>
+                    <li class="whatsapp"><a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
                 </div>
             </article>
         </section>
         <section class="copyright">
             <article class="texto">
-                <h5>Copyright © 1999-2021 MercadoLiebre S.R.L.</h5>
+                <h5>Copyright © 2021 DH-Troopers</h5>
             </article>
         </section>
     </footer>

@@ -12,7 +12,25 @@
 </head>
 <body>
     <header>
-        <div class="caja-logo-busqueda">
+        <section class="caja-logo-busqueda">
+            <article class="cart-heart">
+                <div class="caja-carrito">
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="caja-favorites">
+                    <a href="./#populares"><i class="fas fa-heart heart"></i></a>
+                </div>
+            </article>
+            
+            <article class="logo">
+                <div class="logo-box-normal">
+                    <img src="images/logo1.gif" alt="Logo Peritroopers" width="250"> 
+                </div> 
+                <div class="logo-box-reduced">
+                    <img src="images/logo-cortado.gif" alt="Logo Peritroopers" width="150"> 
+                </div> 
+            </article>
+
             <article class="busqueda-boton">
                 <div class="caja-cuadro">
                     <form action="" class="cuadro-busqueda" method="post" target="_blank">
@@ -22,38 +40,25 @@
                 <div class="caja-boton">
                     <button type="submit" class="boton"><i class="fas fa-search"></i></button>
                 </div>
-            </article>
-            <article class="logo">
-                <img src="images/logo1.gif" alt="Logo Peritroopers" size="100px">  
-            </article>
-            <article class="cart-heart">
-                <div class="caja-carrito">
-                    <a href="./productCart"><i class="fas fa-shopping-cart"></i></a>
+                <nav class="navbar">
+                    <ul type="none" class="barra-nav1">
+                
+                        <li class="seccion-home"><a href="./">Home</a></li>
+                        <li class="seccion-catalogo"><a href="#">Catálogo</a></li>
+                        <li class="seccion-ayuda"><a href="#">Ayuda</a></li>
+                    </ul>
+                    <ul type="none" class="barra-nav2">
+                        <li class="seccion-registro"><a href="./register">Creá tu cuenta </a></li>
+                        <li class="seccion-login"><a href="./login">Ingresá </a></li>
+                    </ul>
+                </nav>
+                <div class="contenedor-burger">
+                    <span class="burger-menu">
+                        <a href=""><i class="fa fa-bars burger"></i></a>
+                    </span>
                 </div>
-                <div class="caja-favorites">
-                    <a href="#"><i class="fas fa-heart"></i></a>
-                </div>
-            </article>
-        </div>
-        <br>
-
-                </ul>
-                <ul type="none" class="barra-nav2">
-                    <li class="seccion-registro"><a href="./register">Creá tu cuenta </a></li>
-                    <li class="seccion-login"><a href="./login">Ingresá </a></li>
-                </ul>
-            </nav>
+            </article> 
         </section>
-
-        <section>
-            <div class="contenedor-burger">
-                <span class="burger-menu">
-                    <a href=""><i class="fa fa-bars burger"></i></a>
-                </span>
-            </div>
-        </section>
-
-        
     </header>
      
     <main>
@@ -121,7 +126,7 @@
                         <div>
                             <textarea type="text" placeholder="Escriba su comentario..." rows="10" name="comentario" class="comentario"></textarea>
                         </div>
-                        <div>
+                        <div class="botones">
                             <button type="submit" class="send" value="Enviar">Enviar consulta</button>
                             <button type="reset" class="clean" value="Cancelar">Cancelar</button>
                         </div>
@@ -131,17 +136,20 @@
         </section>
         <section  class="data">
             <article>
-                <div>
+                <div class="data-item">
                     <span><i class="far fa-building"></i> Av. Rivadavia N° 3454 Piso 3</span>
                 </div>
-                <div>
+                <div class="data-item">
                     <span><i class="fas fa-envelope-open-text"></i> contacto@peritroopers.com.ar</span>
                 </div>
-                <div>
+                <div class="data-item">
                     <span><i class="fas fa-phone-alt"></i> 4117-5794</span>
                 </div>
-                <div>
+                <div class="data-item">
                     <span><i class="fas fa-map-marker-alt"></i> Ciudad Autónoma de Buenos Aires</span>
+                </div>
+                <div class="data-item-faq">
+                    <span><a href="./faq" class="faq-item">Preguntas Frecuentes</a></span>
                 </div>
             </article>
             
