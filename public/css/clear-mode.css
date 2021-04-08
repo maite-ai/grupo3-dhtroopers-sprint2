@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 * {
+    margin: 0;
+    padding: 0;
     font-family: Roboto, sans-serif, arial, helvetica;
     box-sizing: border-box;
 }
@@ -106,6 +108,31 @@ h2 {
 h2:hover {
     background-color: rgb(175, 157, 192);
 }
+
+/*-----------------------EMPIEZAN LOS CAMBIOS DE YISUS-----------------------*/
+.carrousel{
+    border: #4dc247 1px solid;
+    border-radius: 4px;
+    padding: 7px;
+    margin: 10px;
+}
+.detail, .gallery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+    .pic1 img{
+        width: 90%;
+        height: 90%;
+        margin: 10px 15px;
+    }
+    .popular-item img{
+        width: 90%;
+        height: 90%;
+        margin: 10px 15px;
+    }
+/*-----------------------TERMINAN LOS CAMBIOS DE YISUS-----------------------*/
 
 footer {
     font-family: 'Chakra Petch', arial;
@@ -256,14 +283,42 @@ button:hover {
         display: flex;
         flex-flow: column;
     }
+    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .detail, .gallery-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+        .pic1 img{
+            width: 300px;
+            height: 300px;
+        }
+        .popular-item img{
+            width: 300px;
+            height: 300px;
+        }
+    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
 }
 
 
 /* ---------------------------- DESKTOP ---------------------------- */
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
     footer {
         display: flex;
         align-items: center;
     }
+    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .detail, .gallery-container{
+        justify-content: space-between;
+    }
+    .pic1 img{
+        width: 350px;
+        height: 350px;
+    }
+    .popular-item img{
+        width: 350px;
+        height: 350px;
+    }
+    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
 }
