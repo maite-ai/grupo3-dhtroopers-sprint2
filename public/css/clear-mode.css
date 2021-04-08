@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 * {
+    margin: 0;
+    padding: 0;
     font-family: Roboto, sans-serif, arial, helvetica;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,27 +17,372 @@ header {
     color: white;
 }
 
+.logo {
+    border: solid 4px white;
+    box-sizing: content-box;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+}
+
 .caja-logo-busqueda {
     display: flex;
+    justify-content: space-around;
     font-family: 'Chakra Petch', arial;
+}
+
+.cuadro-busqueda {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cart-heart {
+    font-size: 24px;
+    padding: 30px;
+    border: 1px solid greenyellow;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.contenedor-links {
+    margin-top: 0;
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
 }
 
 main {
     background-color: #f8f1f1;
 }
 
-.enlaces a {
+.contenedor-links a {
     font-family: 'Chakra Petch', arial;
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    overflow: hidden;
 }
 
+.navbar {
+    display: none;
+    justify-content: space-between;
+    border: 1px solid yellowgreen;
+    align-self: center;
+}
+
+.barra-nav1,
+.barra-nav2 {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid pink;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.contenedor-burger {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.burger-menu {
+    font-size: 22px;
+    padding: 9px 10px;
+}
+
+h2 {
+    border: solid 2px #180A41;
+    color: #180A41;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Chakra Petch', arial;
+}
+
+h2:hover {
+    background-color: rgb(175, 157, 192);
+}
+
+/*-----------------------EMPIEZAN LOS CAMBIOS DE YISUS-----------------------*/
+.carrousel{
+    border: #4dc247 1px solid;
+    border-radius: 4px;
+    padding: 7px;
+    margin: 10px;
+}
+.detail, .gallery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+    .pic1 img{
+        width: 90%;
+        height: 90%;
+        margin: 10px 15px;
+    }
+    .popular-item img{
+        width: 90%;
+        height: 90%;
+        margin: 10px 15px;
+    }
+/*-----------------------TERMINAN LOS CAMBIOS DE YISUS-----------------------*/
+
 footer {
+    font-family: 'Chakra Petch', arial;
     background-color: #180A41;
     color: white;
     display: flex;
+    flex-flow: column;
+    width: 100%;
     align-items: center;
+}
+
+.contactus-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.nombre,
+.email {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.comentario {
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+}
+
+.data,
+.socialIcons,
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.data-item {
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: flex;
+    flex-flow: column;
+}
+
+.send {
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(110, 110, 237);
+    box-shadow: 0px 2px 5px rgb(206, 206, 206);
+    color: #fff;
+    font-family: "Chakra Petch", arial;
+    font-weight: bold;
+}
+
+.clean {
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #180A41;
+    box-shadow: 0px 2px 5px rgb(206, 206, 206);
+    color: #fff;
+    font-family: "Chakra Petch", arial;
+    font-weight: bold;
+}
+
+.send:hover {
+    background-color: rgb(79, 226, 79);
+    transition: color 2s ease-out;
+}
+
+.clean:hover {
+    background-color: rgb(240, 125, 125);
+    transition: color 2s ease-in;
+}
+
+.socialIcons {
+    display: flex;
+    flex-flow: row;
+}
+
+.socialIcons li {
+    background-color: yellow;
+    list-style: none;
+    margin: 5px;
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+.socialIcons li a {
+    display: block;
+    padding: 0.5em;
+    min-width: 2.28571429em;
+    max-width: 2.28571429em;
+    height: 2.28571429em;
+    white-space: nowrap;
+    line-height: 1.5em;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+}
+
+.socialIcons li i {
+    margin-right: 0.5em;
+    text-align: center;
+    font-size: 20px;
+}
+
+.socialIcons li:hover a {
+    max-width: 200px;
+    padding-right: 1em;
+    text-decoration: none;
+}
+
+.socialIcons .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .twitter {
+    background-color: #00aced;
+    box-shadow: 0 0 16px #00aced;
+}
+
+.socialIcons .instagram {
+    background-color: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+}
+
+.socialIcons .whatsapp {
+    background-color: #4dc247;
+    box-shadow: 0 0 16px #4dc247;
+}
+
+
+/* ================================= CARRITO DE COMPRAS ======================================== */
+
+.carrito {
+    display: flex;
+    justify-content: center;
+}
+
+.table-cart {
+    text-align: center;
+    border: 1px rgb(110, 110, 237) solid;
+}
+
+thead {
+    font-size: 2.5vw;
+    text-align: center;
+    border: 1px rgb(110, 110, 237) solid;
+}
+
+tfoot {
+    font-size: 3.5vw;
+    border: 1px rgb(110, 110, 237) solid;
+}
+
+
+/* ---------------------------- TABLETS ---------------------------- */
+
+@media (min-width: 481px) {
+    .navbar {
+        display: flex;
+        visibility: visible;
+    }
+    .contenedor-burger {
+        display: none;
+    }
+    footer {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .copyright {
+        flex: 5 1 100%;
+        text-align: center;
+    }
+}
+
+
+/* ----------------- TABLETS en LANDSCAPE / LAPTOPS ----------------- */
+
+@media (min-width: 769px) {
+    .barra-nav1,
+    .barra-nav2 {
+        display: flex;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+    }
+    .socialIcons {
+        display: flex;
+        flex-flow: column;
+    }
+    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .detail, .gallery-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+        .pic1 img{
+            width: 300px;
+            height: 300px;
+        }
+        .popular-item img{
+            width: 300px;
+            height: 300px;
+        }
+    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
+}
+
+
+/* ---------------------------- DESKTOP ---------------------------- */
+
+@media (min-width: 1200px) {
+    footer {
+        display: flex;
+        align-items: center;
+    }
+    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .detail, .gallery-container{
+        justify-content: space-between;
+    }
+    .pic1 img{
+        width: 350px;
+        height: 350px;
+    }
+    .popular-item img{
+        width: 350px;
+        height: 350px;
+    }
+    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
 }
