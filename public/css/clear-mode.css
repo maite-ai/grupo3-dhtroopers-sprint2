@@ -17,18 +17,39 @@ header {
     color: white;
 }
 
-.logo {
-    border: solid 4px white;
-    box-sizing: content-box;
-    width: 20%;
-    height: 20%;
-    text-align: center;
-}
-
 .caja-logo-busqueda {
     display: flex;
     justify-content: space-around;
     font-family: 'Chakra Petch', arial;
+}
+
+.cart-heart {
+    display: flex;
+    align-self: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    border: 2px solid yellow;
+}
+
+.cart,
+.heart {
+    flex: 1 1 auto;
+    font-size: 12px;
+}
+
+.logo-box-normal {
+    display: none;
+}
+
+.logo-box-reduced {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .cuadro-busqueda {
@@ -38,15 +59,6 @@ header {
 a {
     text-decoration: none;
     color: white;
-}
-
-.cart-heart {
-    font-size: 24px;
-    padding: 30px;
-    border: 1px solid greenyellow;
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
 }
 
 .contenedor-links {
@@ -99,6 +111,7 @@ main {
 }
 
 h2 {
+    margin-top: 20px;
     border: solid 2px #180A41;
     color: #180A41;
     text-align: center;
@@ -110,33 +123,40 @@ h2:hover {
     background-color: rgb(175, 157, 192);
 }
 
+
 /*-----------------------EMPIEZAN LOS CAMBIOS DE YISUS-----------------------*/
-.carrousel{
+
+.carrousel {
     border: #4dc247 1px solid;
     border-radius: 4px;
     padding: 7px;
     margin: 10px;
 }
-.detail, .gallery-container{
+
+.detail,
+.gallery-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-    .pic1 img{
-        width: 90%;
-        height: 90%;
-        margin: 10px 15px;
-    }
-    .popular-item img{
-        width: 90%;
-        height: 90%;
-        margin: 10px 15px;
-    }
+
+.pic1 img {
+    width: 90%;
+    height: 90%;
+    margin: 10px 15px;
+}
+
+.popular-item img {
+    width: 90%;
+    height: 90%;
+    margin: 10px 15px;
+}
+
+
 /*-----------------------TERMINAN LOS CAMBIOS DE YISUS-----------------------*/
 
 footer {
-    font-family: 'Chakra Petch', arial;
     background-color: #180A41;
     color: white;
     display: flex;
@@ -149,18 +169,21 @@ footer {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .contact-form {
+    font-family: 'Chakra Petch', arial;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     line-height: 30px;
 }
 
 .nombre,
 .email {
+    font-family: 'Chakra Petch', arial;
     width: 200px;
     height: 30px;
     margin-bottom: 10px;
@@ -169,6 +192,7 @@ footer {
 }
 
 .comentario {
+    font-family: 'Chakra Petch', arial;
     width: 200px;
     border: none;
     border-radius: 4px;
@@ -177,12 +201,22 @@ footer {
 .data,
 .socialIcons,
 .copyright {
+    font-family: 'Chakra Petch', arial;
     margin-top: 20px;
     text-align: center;
 }
 
 .data-item {
     margin-bottom: 10px;
+}
+
+.data-item-faq {
+    margin-top: 20px;
+}
+
+.faq-item {
+    font-size: 14px;
+    color: #00aced;
 }
 
 .botones {
@@ -286,25 +320,106 @@ footer {
 
 /* ================================= CARRITO DE COMPRAS ======================================== */
 
+.cart-buttons {
+    padding-bottom: 35px;
+}
+
 .carrito {
+    font-family: 'Chakra Petch', arial;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
 }
 
 .table-cart {
+    margin-top: 25px;
     text-align: center;
-    border: 1px rgb(110, 110, 237) solid;
 }
 
 thead {
+    font-family: 'Chakra Petch', arial;
+    color: #180A41;
     font-size: 2.5vw;
     text-align: center;
-    border: 1px rgb(110, 110, 237) solid;
+}
+
+.celda-i {
+    color: #180A41;
+    width: 15%;
+}
+
+.foto-carro {
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.detalle-producto {
+    font-family: 'Chakra Petch', arial;
+    font-size: 2.7vw;
+}
+
+.precio-unitario {
+    font-family: 'Chakra Petch', arial;
+    font-size: 2.6vw;
+}
+
+.precio-final {
+    font-family: 'Chakra Petch', arial;
+    font-size: 2.9vw;
+}
+
+.celdas {
+    width: 95%;
+    border: 1px rgb(205, 205, 235) solid;
+    border-collapse: collapse;
 }
 
 tfoot {
-    font-size: 3.5vw;
-    border: 1px rgb(110, 110, 237) solid;
+    border-top: 0.5px rgb(110, 110, 237) solid;
+}
+
+.total {
+    font-family: 'Chakra Petch', arial;
+    font-size: 3.2vw;
+    color: #180A41;
+}
+
+.box-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-buy-button {
+    display: flex;
+    align-self: center;
+    margin-top: 25px;
+    font-family: 'Chakra Petch', arial;
+    background-color: #180A41;
+    color: #Fff;
+    padding: 10px 75px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.box-buy-button:hover {
+    box-shadow: 0px 0px 10px rgb(119, 117, 117);
+}
+
+.box-add-button {
+    display: flex;
+    align-self: center;
+    margin-left: 10px;
+    font-family: 'Chakra Petch', arial;
+    background-color: rgb(110, 110, 237);
+    padding: 10px 64px 10px 64px;
+    border-radius: 4px;
+}
+
+.box-add-button:hover {
+    box-shadow: 0px 0px 10px rgb(119, 117, 117);
 }
 
 
@@ -317,6 +432,28 @@ tfoot {
     }
     .contenedor-burger {
         display: none;
+    }
+    thead {
+        font-size: 12px;
+    }
+    .celdas {
+        width: 150px;
+    }
+    .foto-carro {
+        box-sizing: content-box;
+        width: 180px;
+    }
+    .detalle-producto {
+        font-size: 14px;
+    }
+    .precio-unitario {
+        font-size: 16px;
+    }
+    .precio-final {
+        font-size: 18px;
+    }
+    .total {
+        font-size: 20px;
     }
     footer {
         display: flex;
@@ -335,6 +472,10 @@ tfoot {
 /* ----------------- TABLETS en LANDSCAPE / LAPTOPS ----------------- */
 
 @media (min-width: 769px) {
+    .logo-box-normal {
+        display: flex;
+        justify-content: center;
+    }
     .barra-nav1,
     .barra-nav2 {
         display: flex;
@@ -347,20 +488,27 @@ tfoot {
         display: flex;
         flex-flow: column;
     }
+    .box-buy-button {
+        margin-top: 30px;
+    }
+    .box-add-button {
+        margin-top: 20px;
+    }
     /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
-    .detail, .gallery-container{
+    .detail,
+    .gallery-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-        .pic1 img{
-            width: 300px;
-            height: 300px;
-        }
-        .popular-item img{
-            width: 300px;
-            height: 300px;
-        }
+    .pic1 img {
+        width: 300px;
+        height: 300px;
+    }
+    .popular-item img {
+        width: 300px;
+        height: 300px;
+    }
     /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
 }
 
@@ -373,14 +521,15 @@ tfoot {
         align-items: center;
     }
     /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
-    .detail, .gallery-container{
+    .detail,
+    .gallery-container {
         justify-content: space-between;
     }
-    .pic1 img{
+    .pic1 img {
         width: 350px;
         height: 350px;
     }
-    .popular-item img{
+    .popular-item img {
         width: 350px;
         height: 350px;
     }
