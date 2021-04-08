@@ -13,6 +13,10 @@ header {
     color: white;
 }
 
+main {
+    background-color: #f8f1f1;
+}
+
 .login-page {
     border: 2px solid gray;
     border-radius: 8px;

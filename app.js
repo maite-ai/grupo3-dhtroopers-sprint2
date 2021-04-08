@@ -16,4 +16,6 @@ app.get("/login", (req, res) => { res.sendFile(path.join(__dirname, "/views/logi
 
 app.get("/productDetail", (req, res) => { res.sendFile(path.join(__dirname, "/views/productDetail.html")) });
 
+app.get("/faq", (req, res) => { res.sendFile(path.join(__dirname, "/views/faq.html")) });
+
 app.listen(port, () => console.log("Escuchando en puerto " + port));
