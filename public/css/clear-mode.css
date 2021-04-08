@@ -19,8 +19,9 @@ header {
 
 .logo {
     border: solid 4px white;
-    width: 30%;
-    height: 30%;
+    box-sizing: content-box;
+    width: 20%;
+    height: 20%;
     text-align: center;
 }
 
@@ -145,22 +146,32 @@ footer {
 }
 
 .contactus-container {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
     line-height: 30px;
 }
 
 .nombre,
 .email {
-    width: 180px;
+    width: 200px;
     height: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.comentario {
+    width: 200px;
+    border: none;
+    border-radius: 4px;
 }
 
 .data,
@@ -170,18 +181,47 @@ footer {
     text-align: center;
 }
 
-.send,
+.data-item {
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: flex;
+    flex-flow: column;
+}
+
+.send {
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(110, 110, 237);
+    box-shadow: 0px 2px 5px rgb(206, 206, 206);
+    color: #fff;
+    font-family: "Chakra Petch", arial;
+    font-weight: bold;
+}
+
 .clean {
     margin-top: 10px;
     padding: 5px;
-    border-radius: 3px;
-    background-color: #ebebeb;
-    color: #180A41;
+    border: none;
+    border-radius: 5px;
+    background-color: #180A41;
+    box-shadow: 0px 2px 5px rgb(206, 206, 206);
+    color: #fff;
     font-family: "Chakra Petch", arial;
+    font-weight: bold;
 }
 
-button:hover {
-    background-color: blueviolet;
+.send:hover {
+    background-color: rgb(79, 226, 79);
+    transition: color 2s ease-out;
+}
+
+.clean:hover {
+    background-color: rgb(240, 125, 125);
+    transition: color 2s ease-in;
 }
 
 .socialIcons {
@@ -241,6 +281,30 @@ button:hover {
 .socialIcons .whatsapp {
     background-color: #4dc247;
     box-shadow: 0 0 16px #4dc247;
+}
+
+
+/* ================================= CARRITO DE COMPRAS ======================================== */
+
+.carrito {
+    display: flex;
+    justify-content: center;
+}
+
+.table-cart {
+    text-align: center;
+    border: 1px rgb(110, 110, 237) solid;
+}
+
+thead {
+    font-size: 2.5vw;
+    text-align: center;
+    border: 1px rgb(110, 110, 237) solid;
+}
+
+tfoot {
+    font-size: 3.5vw;
+    border: 1px rgb(110, 110, 237) solid;
 }
 
 
