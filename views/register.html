@@ -23,20 +23,21 @@
                     <a href="./#populares"><i class="fas fa-heart heart"></i></a>
                 </div>
             </article>
-            
+
             <article class="logo">
                 <div class="logo-box-normal">
-                    <img src="images/logo1.gif" alt="Logo Peritroopers" width="250"> 
-                </div> 
+                    <img src="images/logo1.gif" alt="Logo Peritroopers" width="250">
+                </div>
                 <div class="logo-box-reduced">
-                    <img src="images/logo-cortado.gif" alt="Logo Peritroopers" width="150"> 
-                </div> 
+                    <img src="images/logo-cortado.gif" alt="Logo Peritroopers" width="150">
+                </div>
             </article>
 
             <article class="busqueda-boton">
                 <div class="caja-cuadro">
                     <form action="" class="cuadro-busqueda" method="post" target="_blank">
-                        <input type="search" placeholder="Busque por marcas, productos, etc." size="30px" class="casillero">
+                        <input type="search" placeholder="Busque por marcas, productos, etc." size="30px"
+                            class="casillero">
                     </form>
                 </div>
                 <div class="caja-boton">
@@ -44,7 +45,7 @@
                 </div>
                 <nav class="navbar">
                     <ul type="none" class="barra-nav1">
-                
+
                         <li class="seccion-home"><a href="./">Home</a></li>
                         <li class="seccion-catalogo"><a href="#">Catálogo</a></li>
                         <li class="seccion-ayuda"><a href="#">Ayuda</a></li>
@@ -59,58 +60,57 @@
                         <a href=""><i class="fa fa-bars burger"></i></a>
                     </span>
                 </div>
-            </article> 
+            </article>
         </section>
     </header>
     <main class="main-register">
-     <section class="registro">
-        <div class="title">
-            <label class="labelTitle" id="labelTitle">REGISTRO</label>
+        <div class="container">
+            <div class="titulo-categoria">Registrate</div>
+            <form action="" method="POST">
+                <div class="f-name">
+                    <label class="f-lbl"> Tu Nombre </label>
+                    <input type="text" name="name" id="name" required
+                        placeholder="* Nombre y Apellido">
+                </div>
+                <div class="f-date">
+                    <label class="f-lbl"> Fecha de nacimiento </label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="f-email">
+                    <label class="f-lbl"> Datos de Acceso </label>
+                    <input type="email" name="email" id="email" required
+                        placeholder="* Correo Electronico">
+                </div>
+                <div class="f-password">
+                    <label class="f-lbl">Pasword</label>
+                    <input type="password" name="password" id="password" required
+                        placeholder="* Contraseña" minlength="8">
+                </div>
+                <div class="f-password2">
+                    <label class="f-lblPassword2"> Debes usar como minimo 8 caracteres, incluyendo un numero,
+                        mayusculas y minusculas.</label>
+                    <input type="password" name="lblPassword2" id="lblPassword2" required
+                        placeholder="* Repetir Contraseña" minlength="8">
+                </div>
+              
+                <div class="checkbox">
+                    <input type="checkbox" name="terminos" id="terminos" required>
+                    He leído y acepto los Términos y condiciones de WeByte y la Política de privacidad
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="notificaciones" id="notificaciones">Quiero recibir notificaciones y ofertas
+                </div>
+                <br>
+                <div class="fr_registro">
+                    <div class="f-btnRegistro">
+                        <button type="submit" class="btn-registrar">Registrar</button>
+                    </div>
+                    <div class="estasRegistrado">Ya estas registrado? <a href="/login">Inicia Sesión</a></div>
+                    <br>
+                </div>
+            </form>
         </div>
-        <form class="formulario" action="/createUser" method="POST">
-            <div class="name">
-                <label class="labelName" id="labelName">Nombre</label>
-                <input type="text" class="inputName" placeholder="nombre" required>
-            </div>
-            <div class="lastName">
-                <label class="labelLastName" id="labelLastName">Apellido</label>
-                <input type="text" class="inputLastName" placeholder="apellido" required>
-            </div>
-            <div class="age">
-                <label class="labelAge" id="labelAge">Fecha de Nacimiento</label>
-
-                <input type="date" class="inputAge" placeholder="Fecha de Nacimiento" required>
-
-            </div>
-            <div class="address">
-                <label class="labelAddress" id="labelAddress">Direccion</label>
-                <input type="text" class="inputAddress" placeholder="direccion" required>
-            </div>
-           <!-- <div class="email">
-                <label class="labelEmail" id="labelEmail">Email</label>
-                <input type="email" class="inputEmail" placeholder="example@gmail.com" required>
-            </div> -->
-            <div class="password">
-                <label class="labelPassword" id="labelPassword">Password</label>
-                <input type="password" class="inputPassword" placeholder="**********" required>
-            </div>
-            <div class="rePassword">
-                <label class="labelRePassword" id="labelRePassword">repita el Password</label>
-                <input type="password" class="inputRePassword" placeholder="**********" required>
-            </div>
-
-            <div class="buttons">
-                <div class="enviar">
-                    <button type="submit" class="btn">Enviar</button>
-                </div>
-                <div class="tengoCuenta">
-                    <button type="#" class="btn-tengoCuenta">Ya tengo cuenta</button>
-                </div>
-
-            </div>
-        </form>
-     </section>
-    </main> 
+    </main>
     <footer>
         <section>
             <article class="contactus-container">
@@ -126,7 +126,8 @@
                             <input type="email" placeholder="usuario@ejemplo.com" name="email" class="email">
                         </div>
                         <div>
-                            <textarea type="text" placeholder="Escriba su comentario..." rows="10" name="comentario" class="comentario"></textarea>
+                            <textarea type="text" placeholder="Escriba su comentario..." rows="10" name="comentario"
+                                class="comentario"></textarea>
                         </div>
                         <div class="botones">
                             <button type="submit" class="send" value="Enviar">Enviar consulta</button>
@@ -136,7 +137,7 @@
                 </div>
             </article>
         </section>
-        <section  class="data">
+        <section class="data">
             <article>
                 <div class="data-item">
                     <span><i class="far fa-building"></i> Av. Rivadavia N° 3454 Piso 3</span>
@@ -154,15 +155,18 @@
                     <span><a href="./faq" class="faq-item">Preguntas Frecuentes</a></span>
                 </div>
             </article>
-            
+
         </section>
-        <section  class="social-media">
+        <section class="social-media">
             <article>
                 <div class="socialIcons">
-                    <li class="facebook"><a href="https://www.facebook.com"><i class="fab fa-facebook" ></i>Facebook</a></li>
-                    <li class="twitter"><a href="https://www.twitter.com"><i class="fab fa-twitter" ></i>Twitter</a></li>
-                    <li class="instagram"><a href="https://instagram.com"><i class="fab fa-instagram" ></i>Instagram</a></li>
-                    <li class="whatsapp"><a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
+                    <li class="facebook"><a href="https://www.facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
+                    </li>
+                    <li class="twitter"><a href="https://www.twitter.com"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li class="instagram"><a href="https://instagram.com"><i class="fab fa-instagram"></i>Instagram</a>
+                    </li>
+                    <li class="whatsapp"><a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+                    </li>
                 </div>
             </article>
         </section>

@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT;
+const puerto = process.env.PORT;
 const path = require("path");
 
 const publicPatch = path.resolve(__dirname, "./public");
@@ -22,6 +22,6 @@ app.get("/productDetail", (req, res) => { res.sendFile(path.join(__dirname, "/vi
 
 app.get("/faq", (req, res) => { res.sendFile(path.join(__dirname, "/views/faq.html")) });
 
-app.listen(port || 3030, () => {
-    console.log("Escuchando en puerto " + port);
+app.listen(puerto || 3000, () => {
+    console.log("Escuchando en puerto ");
 });
