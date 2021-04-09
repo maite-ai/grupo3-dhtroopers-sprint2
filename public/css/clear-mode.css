@@ -152,7 +152,6 @@ section.awSlider>img {
 .barra-nav2 {
     display: flex;
     flex-flow: column;
-    border: 1px solid pink;
     justify-content: left;
     flex-wrap: wrap;
 }
@@ -584,19 +583,21 @@ tfoot {
     .navbar {
         display: flex;
         flex: 1 0 100%;
-        border: 2px solid red;
     }
     .barra-nav1 {
         display: flex;
-        margin-right: 5px;
+        flex-flow: row;
+        justify-content: space-around;
+        margin: 10px;
     }
     .barra-nav2 {
         display: flex;
-        margin-left: 5px;
-        border: 2px solid yellow;
+        flex-flow: row;
+        justify-content: space-around;
+        margin: 10px;
     }
     .secciones {
-        margin: auto;
+        margin: 10px;
     }
     footer {
         display: flex;
