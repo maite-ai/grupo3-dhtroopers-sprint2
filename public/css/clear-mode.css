@@ -76,56 +76,66 @@ main {
 
 /*=========================== CARRUSEL de IMAGENES =====================================*/
 
-body {
-    background: #000;
+.carousel-control.left {
+    background: none;
 }
 
-section.awSlider .carousel {
-    display: table;
-    z-index: 2;
-    -moz-box-shadow: 0 0 4px #444;
-    -webkit-box-shadow: 0 0 4px #444;
-    box-shadow: 0 0 15px rgba(1, 1, 1, .5);
+.carousel-control.right {
+    background: none;
 }
 
-section.awSlider {
-    margin: 30px auto;
-    padding: 30px;
-    position: relative;
-    display: table;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-section.awSlider:hover>img {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    opacity: 1;
-}
-
-section.awSlider img {
-    pointer-events: none;
-}
-
-section.awSlider>img {
+.carousel-control {
     position: absolute;
-    top: 30px;
-    z-index: 1;
-    transition: all .3s;
-    filter: blur(1.8vw);
-    -webkit-filter: blur(2vw);
-    -moz-filter: blur(2vw);
-    -o-filter: blur(2vw);
-    -ms-filter: blur(2vw);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity: .5;
+    top: 45%;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: auto;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.carousel-control:hover {
+    color: #000;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #0009;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #16a085;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #16a085;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 
@@ -543,6 +553,7 @@ tfoot {
     .caja-logo-busqueda {
         display: flex;
         flex-wrap: wrap;
+        padding-bottom: 15px;
     }
     .logo-box-normal {
         display: flex;
@@ -557,21 +568,18 @@ tfoot {
     .navbar {
         display: flex;
         flex: 1 0 100%;
-        border: 2px red solid;
         justify-content: flex-end;
     }
     .barra-nav1 {
         display: flex;
         flex-flow: row;
         justify-content: space-around;
-        margin: 10px;
-        border: 2px solid yellow;
     }
     .secciones {
         margin: 10px;
     }
     .secciones:hover {
-        glow: #ebebeb;
+        text-shadow: 1px 1px 2px #ebebeb;
     }
     footer {
         display: flex;
