@@ -150,7 +150,7 @@ main {
     overflow: hidden;
 }
 
-.navbar {
+.nav-bar {
     display: none;
     justify-content: space-between;
     align-self: center;
@@ -565,7 +565,7 @@ tfoot {
     .contenedor-burger {
         display: none;
     }
-    .navbar {
+    .nav-bar {
         display: flex;
         flex: 1 0 100%;
         justify-content: flex-end;
