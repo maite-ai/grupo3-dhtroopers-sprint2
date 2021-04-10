@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: #f8f1f1;
 }
 
 header {
@@ -153,7 +153,7 @@ img:nth-child(3) {
 
 h2 {
     margin-top: 20px;
-    border: solid 2px #180A41;
+    border-bottom: solid 2px #180A41;
     color: #180A41;
     text-align: center;
     border-radius: 5px;
@@ -172,7 +172,7 @@ h2:hover {
     margin-left: 8px;
 }
 
-.detail-prod {
+.pic1 .detail-prod {
     color: #180A41;
     text-align: center;
     font-size: 14px;
@@ -180,7 +180,7 @@ h2:hover {
     opacity: 0;
 }
 
-.detail-prod:hover {
+.pic1 .detail-prod:hover {
     opacity: 1;
     display: flex;
     flex-wrap: wrap;
@@ -211,20 +211,25 @@ h2:hover {
 }
 
 .our-brands {
-    display: flex;
     padding: 10px 0px 15px 0px;
+    width: 100%;
+    text-align: center;
 }
 
 .brands {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px orange solid;
+    width: 100%;
 }
 
 .brand-item {
-    flex: 1 1 auto;
-    border: solid 2px green;
+    flex: 1 1 20%;
+    margin: 1%;
+}
+
+.brand-item img{
+    width: 100%;
 }
 
 footer {
@@ -270,6 +275,10 @@ footer {
     line-height: 30px;
 }
 
+.contact-form input{
+    padding: 10px;
+}
+
 .nombre,
 .email {
     width: 200px;
@@ -277,6 +286,9 @@ footer {
     margin-bottom: 10px;
     border: none;
     border-radius: 4px;
+}
+.contact-form textarea{
+    padding: 10px;
 }
 
 .comentario {
@@ -316,8 +328,7 @@ footer {
     border: none;
     border-radius: 5px;
     background-color: rgb(110, 110, 237);
-    box-shadow: 0px 2px 5px rgb(206, 206, 206);
-    color: #fff;
+    color:rgb(214, 210, 210);
     font-weight: bold;
 }
 
@@ -327,19 +338,16 @@ footer {
     border: none;
     border-radius: 5px;
     background-color: #180A41;
-    box-shadow: 0px 2px 5px rgb(206, 206, 206);
     color: #fff;
     font-weight: bold;
 }
 
 .send:hover {
-    background-color: rgb(79, 226, 79);
-    transition: color 2s ease-out;
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
 }
 
 .clean:hover {
-    background-color: rgb(240, 125, 125);
-    transition: color 2s ease-in;
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
 }
 
 .socialIcons {
@@ -470,31 +478,31 @@ tfoot {
     flex-wrap: wrap;
 }
 
-.box-buy-button {
-    display: flex;
-    align-self: center;
-    margin-top: 25px;
-    background-color: #180A41;
-    color: #Fff;
-    padding: 10px 75px;
-    margin-bottom: 10px;
+.buy-button{
+    background-color: #180a41;
+    color: #fff;
+    padding: 10px 32px;
     border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    margin: 15px;
 }
 
-.box-buy-button:hover {
+.buy-button:hover {
     box-shadow: 0px 0px 10px rgb(119, 117, 117);
 }
 
-.box-add-button {
-    display: flex;
-    align-self: center;
-    margin-left: 10px;
+.add-button{
     background-color: rgb(110, 110, 237);
-    padding: 10px 64px 10px 64px;
+    color: #fff;
+    padding: 10px 32px;
     border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    margin: 15px;
 }
 
-.box-add-button:hover {
+.add-button:hover {
     box-shadow: 0px 0px 10px rgb(119, 117, 117);
 }
 
@@ -536,6 +544,7 @@ tfoot {
         flex: 5 1 100%;
         text-align: center;
     }
+
 }
 
 
@@ -581,7 +590,7 @@ tfoot {
         flex-flow: column;
     }
     .box-buy-button {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .box-add-button {
         margin-top: 20px;
@@ -593,10 +602,16 @@ tfoot {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .our-brands {
+        max-width: 70%;
+        margin: auto;
+    }
+
     .pic1 img {
         width: 300px;
         height: 300px;
     }
+
     .popular-item img {
         width: 300px;
         height: 300px;
