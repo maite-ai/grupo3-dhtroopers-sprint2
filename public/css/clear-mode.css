@@ -228,13 +228,8 @@ h2:hover {
     margin: 1%;
 }
 
-.brand-item img{
+.brand-item img {
     width: 100%;
-}
-
-footer {
-    display: flex;
-    align-items: center;
 }
 
 
@@ -264,34 +259,42 @@ footer {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.contactus-title {
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     line-height: 30px;
 }
 
-.contact-form input{
-    padding: 10px;
+.contact-form label {
+    display: none;
+}
+
+.contact-form input {
+    padding: 2px 10px;
 }
 
 .nombre,
 .email {
     width: 200px;
-    height: 30px;
-    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
 }
-.contact-form textarea{
+
+.contact-form textarea {
     padding: 10px;
 }
 
 .comentario {
+    margin-top: 15px;
     width: 200px;
     border: none;
     border-radius: 4px;
@@ -300,12 +303,17 @@ footer {
 .data,
 .socialIcons,
 .copyright {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
+.copyright {
+    font-size: 10px;
+}
+
 .data-item {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
 }
 
 .data-item-faq {
@@ -328,7 +336,7 @@ footer {
     border: none;
     border-radius: 5px;
     background-color: rgb(110, 110, 237);
-    color:rgb(214, 210, 210);
+    color: rgb(214, 210, 210);
     font-weight: bold;
 }
 
@@ -478,7 +486,7 @@ tfoot {
     flex-wrap: wrap;
 }
 
-.buy-button{
+.buy-button {
     background-color: #180a41;
     color: #fff;
     padding: 10px 32px;
@@ -492,7 +500,7 @@ tfoot {
     box-shadow: 0px 0px 10px rgb(119, 117, 117);
 }
 
-.add-button{
+.add-button {
     background-color: rgb(110, 110, 237);
     color: #fff;
     padding: 10px 32px;
@@ -544,7 +552,6 @@ tfoot {
         flex: 5 1 100%;
         text-align: center;
     }
-
 }
 
 
@@ -606,17 +613,21 @@ tfoot {
         max-width: 70%;
         margin: auto;
     }
-
     .pic1 img {
         width: 300px;
         height: 300px;
     }
-
     .popular-item img {
         width: 300px;
         height: 300px;
     }
     /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .data-item {
+        margin-bottom: 10px;
+    }
+    .contact-form label {
+        display: block;
+    }
 }
 
 
