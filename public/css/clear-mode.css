@@ -637,8 +637,7 @@ tfoot {
         align-items: center;
     }
     /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
-    .detail,
-    .gallery-container {
+    .detail, .gallery-container {
         justify-content: space-between;
     }
     .pic1{
