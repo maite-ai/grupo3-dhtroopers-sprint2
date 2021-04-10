@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Peritroopers</title>
+    <link rel="shortcut icon" href="images/peritroopers_icon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/clear-mode.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <section class="caja-logo-busqueda">
             <article class="cart-heart">
                 <div class="caja-carrito">
-                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                    <a href="./productCart"><i class="fas fa-shopping-cart cart"></i></a>
                 </div>
                 <div class="caja-favorites">
                     <a href="./#populares"><i class="fas fa-heart heart"></i></a>
@@ -33,7 +39,7 @@
 
             <article class="busqueda-boton">
                 <div class="caja-cuadro">
-                    <form action="" class="cuadro-busqueda" method="post" target="_blank">
+                    <form action="" class="cuadro-busqueda" method="GET" target="_blank">
                         <input type="search" placeholder="Busque por marcas, productos, etc." size="30px" class="casillero">
                     </form>
                 </div>
@@ -48,13 +54,11 @@
                         <a href=""><i class="fa fa-bars burger"></i></a>
                     </span>
                 </div>
-                <nav class="navbar">
+                <nav class="nav-bar">
                     <ul type="none" class="barra-nav1">
                         <li class="secciones"><a href="./">Home</a></li>
                         <li class="secciones"><a href="#">Catálogo</a></li>
                         <li class="secciones"><a href="#">Ayuda</a></li>
-                    </ul>
-                    <ul type="none" class="barra-nav2">
                         <li class="secciones"><a href="./register">Creá tu cuenta </a></li>
                         <li class="secciones"><a href="./login">Ingresá </a></li>
                     </ul>
@@ -63,9 +67,12 @@
     </header>
      
     <main>
-        <section class="carrousel">
-            <span>Carrousel de imágenes</span>
-        </section>
+        <div class="pic-ctn">
+            <img src="images/play-your-way.jpg" width="360" height="200" alt="Productos Logitech" class="pic">
+            <img src="images/experiencia-gamer.png"  width="360" height="160"alt="Banner negocio" class="pic">
+            <img src="images/medios-de-pago.png"  width="340" height="160" alt="Medios de pago" class="pic">
+        </div>
+
         <section>
             <h2>Novedades</h2>
             <article class="news">
@@ -96,14 +103,14 @@
         <br>
         <section>
             <h2>Nuestras Marcas</h2>
-            <article class="our-brands">
-                <div class="brands">
-                    <ul>
-                        <li class="brand-item"></li>
-                        <li class="brand-item"></li>
-                        <li class="brand-item"></li>
-                        <li class="brand-item"></li>
-                        <li class="brand-item"></li>
+            <article>
+                <div class="our-brands">
+                    <ul class="brands">
+                        <li class="brand-item"><img src="images/brands/logo-corsair.png" width="180px" alt="Corsair"></li>
+                        <li class="brand-item"><img src="images/brands/logo-genius.png" width="180px" alt="Genius"></li>
+                        <li class="brand-item"><img src="images/brands/logitech.png" width="180px" alt="Logitech"></li>
+                        <li class="brand-item"><img src="images/brands/logo-noga.png" width="180px" alt="Noga"></li>
+                        <li class="brand-item"><img src="images/brands/logo-redragon.png" width="180px" alt="Redragon"></li>
                     </ul>
                 </div>
             </article>
