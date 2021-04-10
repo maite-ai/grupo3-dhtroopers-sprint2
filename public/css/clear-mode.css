@@ -35,6 +35,12 @@ header {
     font-size: 12px;
 }
 
+.logo {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .logo-box-normal {
     display: none;
 }
@@ -42,12 +48,6 @@ header {
 .logo-box-reduced {
     display: flex;
     justify-content: center;
-}
-
-.logo {
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .cuadro-busqueda {
@@ -76,10 +76,14 @@ main {
 
 .pic-ctn {
     position: relative;
-    right: 8%;
     width: 90%;
     height: 200px;
     margin: 0.5vh auto auto auto;
+}
+
+.pic-ctn img {
+    width: 90%;
+    height: 70%;
 }
 
 @keyframes display {
@@ -202,14 +206,6 @@ h2:hover {
     box-shadow: 0px 0px 10px rgb(175, 157, 192);
 }
 
-.pic1 img {
-    width: 100%;
-}
-
-.popular-item img {
-    width: 100%;
-}
-
 .our-brands {
     padding: 10px 0px 15px 0px;
     width: 100%;
@@ -241,6 +237,22 @@ h2:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.pic1,
+.popular-item {
+    width: 200px;
+    height: 300px;
+}
+
+.pic1 img {
+    width: 200px;
+    height: 200px;
+}
+
+.popular-item img {
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -592,6 +604,9 @@ tfoot {
         text-decoration: underline;
         color: rgb(110, 110, 237);
     }
+    .pic-ctn {
+        right: 14%;
+    }
     .socialIcons {
         display: flex;
         flex-flow: column;
@@ -612,6 +627,11 @@ tfoot {
     .our-brands {
         max-width: 70%;
         margin: auto;
+    }
+    .pic1,
+    .popular-item {
+        width: 300px;
+        height: 400px;
     }
     .pic1 img {
         width: 300px;
@@ -643,13 +663,21 @@ tfoot {
     .gallery-container {
         justify-content: space-between;
     }
+    .pic1 {
+        width: 325px;
+        height: 425px;
+    }
     .pic1 img {
-        width: 350px;
-        height: 350px;
+        width: 325px;
+        height: 325px;
+    }
+    .popular-item {
+        width: 325px;
+        height: 425px;
     }
     .popular-item img {
-        width: 350px;
-        height: 350px;
+        width: 325px;
+        height: 325px;
     }
     /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
 }
