@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Peritroopers</title>
+    <link rel="shortcut icon" href="images/peritroopers_icon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/clear-mode.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <section class="caja-logo-busqueda">
             <article class="cart-heart">
                 <div class="caja-carrito">
-                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                    <a href="./productCart"><i class="fas fa-shopping-cart cart"></i></a>
                 </div>
                 <div class="caja-favorites">
                     <a href="./#populares"><i class="fas fa-heart heart"></i></a>
@@ -33,60 +39,78 @@
 
             <article class="busqueda-boton">
                 <div class="caja-cuadro">
-                    <form action="" class="cuadro-busqueda" method="post" target="_blank">
+                    <form action="" class="cuadro-busqueda" method="GET" target="_blank">
                         <input type="search" placeholder="Busque por marcas, productos, etc." size="30px" class="casillero">
                     </form>
                 </div>
                 <div class="caja-boton">
                     <button type="submit" class="boton"><i class="fas fa-search"></i></button>
                 </div>
-                <nav class="navbar">
-                    <ul type="none" class="barra-nav1">
+               
                 
-                        <li class="seccion-home"><a href="./">Home</a></li>
-                        <li class="seccion-catalogo"><a href="#">Catálogo</a></li>
-                        <li class="seccion-ayuda"><a href="#">Ayuda</a></li>
-                    </ul>
-                    <ul type="none" class="barra-nav2">
-                        <li class="seccion-registro"><a href="./register">Creá tu cuenta </a></li>
-                        <li class="seccion-login"><a href="./login">Ingresá </a></li>
-                    </ul>
-                </nav>
-                <div class="contenedor-burger">
+            </article> 
+             <div class="contenedor-burger">
                     <span class="burger-menu">
                         <a href=""><i class="fa fa-bars burger"></i></a>
                     </span>
                 </div>
-            </article> 
+                <nav class="nav-bar">
+                    <ul type="none" class="barra-nav1">
+                        <li class="secciones"><a href="./">Home</a></li>
+                        <li class="secciones"><a href="#">Catálogo</a></li>
+                        <li class="secciones"><a href="#">Ayuda</a></li>
+                        <li class="secciones"><a href="./register">Creá tu cuenta </a></li>
+                        <li class="secciones"><a href="./login">Ingresá </a></li>
+                    </ul>
+                </nav>
         </section>
     </header>
      
     <main>
-        <section class="carrousel">
-            Carrousel de imágenes
-        </section>
+        <div class="pic-ctn">
+            <img src="images/play-your-way.jpg" width="360" height="200" alt="Productos Logitech" class="pic">
+            <img src="images/experiencia-gamer.png"  width="360" height="160"alt="Banner negocio" class="pic">
+            <img src="images/medios-de-pago.png"  width="340" height="160" alt="Medios de pago" class="pic">
+        </div>
+
         <section>
             <h2>Novedades</h2>
             <article class="news">
                 <div class="detail">
-                    <div><a href="productDetail" class="pic1"><img src="images/tecladoRedDragonNovedades.jpg" alt="Teclado Red Dragon"></a></div>
-                    <div><a href="productDetail" class="pic1"><img src="images/auricularesCorsairNovedades.jpg" alt="Auriculares Corsair"></a></div>
-                    <div><a href="productDetail" class="pic1"><img src="images/mouseRedDragonNovedades.jpg" alt="Mouse Red Dragon"></a></div>
-                    <div><a href="productDetail" class="pic1"><img src="images/microfonoHyperXNovedades.jpg" alt="Micrófono HyperX"></a></div>
+                    <div class="pic1"><a href="./productDetail">
+                        <img src="images/tecladoRedDragonNovedades.jpg" alt="Teclado Redragon">
+                        <p class="price">$ 4.571,47</p>
+                        <p class="detail-prod">Teclado Redragon gamer retroiluminado RGB</p> 
+                    </a></div>
+                    <div class="pic1"><a href="./productDetail">
+                        <img src="images/auricularesCorsairNovedades.jpg" alt="Auriculares Corsair">
+                        <p class="price">$ 2.574,50</p>
+                        <p class="detail-prod">Auriculares gamer Corsair LT-453 Bluetooth </p>
+                    </a></div>
+                    <div class="pic1"><a href="./productDetail">
+                        <img src="images/mouseRedDragonNovedades.jpg" alt="Mouse Red Dragon">
+                        <p class="price">$ 3.705,17</p>
+                        <p class="detail-prod">Mouse Redragon gamer multicolor</p> 
+                     </a></div>
+                    <div class="pic1"><a href="./productDetail">
+                        <img src="images/microfonoHyperXNovedades.jpg" alt="Micrófono HyperX">
+                        <p class="price">$ 10.458,99</p>
+                        <p class="detail-prod">Micrófono HyperX color rojo y negro con filtro</p> 
+                    </a></div>
                 </div>
             </article>
         </section>
         <br>
         <section>
             <h2>Nuestras Marcas</h2>
-            <article class="our-brands">
-                <div class="brands">
-                    <ul>
-                        <li class="brand-item"></li>
-                        <li class="brand-item"></li>
-                        <li class="brand-item"></li>
-                        <li class="brand-item"></li>
-                        <li class="brand-item"></li>
+            <article class="brand-container">
+                <div class="our-brands">
+                    <ul class="brands" type="none">
+                        <li class="brand-item"><img src="images/brands/logo-corsair.png" width="180px" alt="Corsair"></li>
+                        <li class="brand-item"><img src="images/brands/logo-genius.png" width="180px" alt="Genius"></li>
+                        <li class="brand-item"><img src="images/brands/logitech.png" width="180px" alt="Logitech"></li>
+                        <li class="brand-item"><img src="images/brands/logo-noga.png" width="180px" alt="Noga"></li>
+                        <li class="brand-item"><img src="images/brands/logo-redragon.png" width="180px" alt="Redragon"></li>
                     </ul>
                 </div>
             </article>
@@ -96,14 +120,54 @@
             <h2>Populares</h2>
             <article class="populars">
                 <div class="gallery-container">
-                    <div class="popular-item"><a href="productDetail"><img src="images/tecladoRazerPopulares.jpg" alt=""></a></div>
-                    <div class="popular-item"><a href="productDetail"><img src="images/auricularesCorsairPopulares.png" alt=""></a></div>
-                    <div class="popular-item"><a href="productDetail"><img src="images/mouseRazerPopulares.jpg" alt=""></a></div>
-                    <div class="popular-item"><a href="productDetail"><img src="images/microfonoPopulares.jpg" alt=""></a></div>
-                    <div class="popular-item"><a href="productDetail"><img src="images/tecladoRedDragonPopulares.jpg" alt=""></a></div>
-                    <div class="popular-item"><a href="productDetail"><img src="images/auricularesRazerPopulares.png" alt=""></a></div>
-                    <div class="popular-item"><a href="productDetail"><img src="images/mouseHyperXPopulares.jpg" alt=""></a></div>
-                    <div class="popular-item"><a href="productDetail"><img src="images/microfonoBluYetiPopulares.jpg" alt=""></a></div>
+                    <div class="popular-item">
+                        <a href="./productDetail">
+                            <img src="images/tecladoRazerPopulares.jpg" alt="">
+                            <p class="price">$ 5.175,47</p>
+                            <p class="detail-prod">Teclado Razer gamer retroiluminado RGB</p> 
+                        </a></div>
+                    <div class="popular-item">
+                        <a href="./productDetail">
+                            <img src="images/auricularesCorsairPopulares.png" alt="">
+                            <p class="price">$ 2.574,50</p>
+                           <p class="detail-prod">Auriculares gamer Corsair HS35 STEREO </p> 
+                        </a></div>
+                    <div class="popular-item">
+                        <a href="./productDetail">
+                            <img src="images/mouseRazerPopulares.jpg" alt="">
+                            <p class="price">$ 1.479,50</p>
+                            <p class="detail-prod">Mouse Razer gamer diestros</p> 
+                        </a></div>
+                    <div class="popular-item">
+                        <a href="./productDetail">
+                            <img src="images/microfonoPopulares.jpg" alt="">
+                            <p class="price">$ 25.877,99</p>
+                            <p class="detail-prod">Micrófono Shure F34-WE Stereo</p> 
+                        </a></div>
+                    <div class="popular-item">
+                        <a href="./productDetail">
+                            <img src="images/tecladoRedDragonPopulares.jpg" alt="">
+                            <p class="price">$ 3.987,07</p>
+                            <p class="detail-prod">Teclado Redragon gamer retroiluminado RGB</p> 
+                        </a></div>
+                    <div class="popular-item">
+                        <a href="./productDetail">
+                            <img src="images/auricularesRazerPopulares.png" alt="">
+                            <p class="price">$ 5.656,00</p>
+                            <p class="detail-prod">Auriculares Razer con micrófono orejitas Neko retroiluminado</p> 
+                        </a></div>
+                    <div class="popular-item">
+                        <a href="./productDetail">
+                            <img src="images/mouseHyperXPopulares.jpg" alt="">
+                            <p class="price">$ 4.487,50</p>
+                            <p class="detail-prod">Mouse óptico HyperX HSC-342</p> 
+                        </a></div>
+                    <div class="popular-item">
+                        <a href="./productDetail">
+                            <img src="images/microfonoBluYetiPopulares.jpg" alt="">
+                            <p class="price">$ 25.484,77</p>
+                            <p class="detail-prod">Micrófono Blue Yeti S22 Inalámbrico</p> 
+                        </a></div>
                 </div>
             </article>
         </section>
@@ -124,7 +188,7 @@
                             <input type="email" placeholder="usuario@ejemplo.com" name="email" class="email">
                         </div>
                         <div>
-                            <textarea type="text" placeholder="Escriba su comentario..." rows="10" name="comentario" class="comentario"></textarea>
+                            <textarea type="text" placeholder="Escriba su comentario..." rows="4" name="comentario" class="comentario"></textarea>
                         </div>
                         <div class="botones">
                             <button type="submit" class="send" value="Enviar">Enviar consulta</button>
@@ -156,12 +220,12 @@
         </section>
         <section  class="social-media">
             <article>
-                <div class="socialIcons">
+                <ul class="socialIcons">
                     <li class="facebook"><a href="https://www.facebook.com"><i class="fab fa-facebook" ></i>Facebook</a></li>
                     <li class="twitter"><a href="https://www.twitter.com"><i class="fab fa-twitter" ></i>Twitter</a></li>
                     <li class="instagram"><a href="https://instagram.com"><i class="fab fa-instagram" ></i>Instagram</a></li>
                     <li class="whatsapp"><a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
-                </div>
+                </ul>
             </article>
         </section>
         <section class="copyright">

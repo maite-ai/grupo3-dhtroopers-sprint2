@@ -1,15 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif, arial, helvetica;
+    font-family: 'Chakra Petch', sans-serif, arial, helvetica;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #fff;
+    background-color: #f8f1f1;
 }
 
 header {
@@ -20,7 +18,6 @@ header {
 .caja-logo-busqueda {
     display: flex;
     justify-content: space-around;
-    font-family: 'Chakra Petch', arial;
 }
 
 .cart-heart {
@@ -28,12 +25,13 @@ header {
     align-self: center;
     flex-wrap: nowrap;
     justify-content: space-around;
-    border: 2px solid yellow;
 }
 
 .cart,
 .heart {
     flex: 1 1 auto;
+    margin-left: 8px;
+    margin-right: 8px;
     font-size: 12px;
 }
 
@@ -54,6 +52,7 @@ header {
 
 .cuadro-busqueda {
     display: none;
+    visibility: hidden;
 }
 
 a {
@@ -72,8 +71,60 @@ main {
     background-color: #f8f1f1;
 }
 
+
+/*=========================== CARRUSEL de IMAGENES =====================================*/
+
+.pic-ctn {
+    position: relative;
+    right: 8%;
+    width: 90%;
+    height: 200px;
+    margin: 0.5vh auto auto auto;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn>img {
+    position: absolute;
+    top: 0;
+    left: calc(35% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+
+/*============================= FIN CARRUSEL ===================================*/
+
 .contenedor-links a {
-    font-family: 'Chakra Petch', arial;
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
@@ -82,20 +133,10 @@ main {
     overflow: hidden;
 }
 
-.navbar {
+.nav-bar {
     display: none;
     justify-content: space-between;
-    border: 1px solid yellowgreen;
     align-self: center;
-}
-
-.barra-nav1,
-.barra-nav2 {
-    display: flex;
-    flex-flow: column;
-    border: 1px solid pink;
-    justify-content: left;
-    flex-wrap: wrap;
 }
 
 .contenedor-burger {
@@ -112,7 +153,7 @@ main {
 
 h2 {
     margin-top: 20px;
-    border: solid 2px #180A41;
+    border-bottom: solid 2px #180A41;
     color: #180A41;
     text-align: center;
     border-radius: 5px;
@@ -123,15 +164,81 @@ h2:hover {
     background-color: rgb(175, 157, 192);
 }
 
-
-/*-----------------------EMPIEZAN LOS CAMBIOS DE YISUS-----------------------*/
-
-.carrousel {
-    border: #4dc247 1px solid;
-    border-radius: 4px;
-    padding: 7px;
-    margin: 10px;
+.price {
+    color: rgb(110, 110, 237);
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 8px;
 }
+
+.pic1 .detail-prod {
+    color: #180A41;
+    text-align: center;
+    font-size: 14px;
+    margin: 8px;
+    opacity: 0;
+}
+
+.pic1 .detail-prod:hover {
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pic1,
+.popular-item {
+    margin: 25px;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.pic1:hover {
+    box-shadow: 0px 0px 10px rgb(175, 157, 192);
+}
+
+.popular-item:hover {
+    box-shadow: 0px 0px 10px rgb(175, 157, 192);
+}
+
+.pic1 img {
+    width: 100%;
+}
+
+.popular-item img {
+    width: 100%;
+}
+
+.our-brands {
+    padding: 10px 0px 15px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.brand-item {
+    flex: 1 1 20%;
+    margin: 1%;
+}
+
+.brand-item img{
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+
+/*-----------EMPIEZAN LOS CAMBIOS DE YISUS --> modificado por PEI, sorry YISUS :/----------------------*/
 
 .detail,
 .gallery-container {
@@ -139,18 +246,6 @@ h2:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-.pic1 img {
-    width: 90%;
-    height: 90%;
-    margin: 10px 15px;
-}
-
-.popular-item img {
-    width: 90%;
-    height: 90%;
-    margin: 10px 15px;
 }
 
 
@@ -173,7 +268,6 @@ footer {
 }
 
 .contact-form {
-    font-family: 'Chakra Petch', arial;
     display: flex;
     flex-direction: column;
     margin-top: 25px;
@@ -181,18 +275,23 @@ footer {
     line-height: 30px;
 }
 
+.contact-form input{
+    padding: 10px;
+}
+
 .nombre,
 .email {
-    font-family: 'Chakra Petch', arial;
     width: 200px;
     height: 30px;
     margin-bottom: 10px;
     border: none;
     border-radius: 4px;
 }
+.contact-form textarea{
+    padding: 10px;
+}
 
 .comentario {
-    font-family: 'Chakra Petch', arial;
     width: 200px;
     border: none;
     border-radius: 4px;
@@ -201,7 +300,6 @@ footer {
 .data,
 .socialIcons,
 .copyright {
-    font-family: 'Chakra Petch', arial;
     margin-top: 20px;
     text-align: center;
 }
@@ -230,9 +328,7 @@ footer {
     border: none;
     border-radius: 5px;
     background-color: rgb(110, 110, 237);
-    box-shadow: 0px 2px 5px rgb(206, 206, 206);
-    color: #fff;
-    font-family: "Chakra Petch", arial;
+    color:rgb(214, 210, 210);
     font-weight: bold;
 }
 
@@ -242,20 +338,16 @@ footer {
     border: none;
     border-radius: 5px;
     background-color: #180A41;
-    box-shadow: 0px 2px 5px rgb(206, 206, 206);
     color: #fff;
-    font-family: "Chakra Petch", arial;
     font-weight: bold;
 }
 
 .send:hover {
-    background-color: rgb(79, 226, 79);
-    transition: color 2s ease-out;
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
 }
 
 .clean:hover {
-    background-color: rgb(240, 125, 125);
-    transition: color 2s ease-in;
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
 }
 
 .socialIcons {
@@ -325,7 +417,6 @@ footer {
 }
 
 .carrito {
-    font-family: 'Chakra Petch', arial;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -339,7 +430,6 @@ footer {
 }
 
 thead {
-    font-family: 'Chakra Petch', arial;
     color: #180A41;
     font-size: 2.5vw;
     text-align: center;
@@ -356,17 +446,14 @@ thead {
 }
 
 .detalle-producto {
-    font-family: 'Chakra Petch', arial;
     font-size: 2.7vw;
 }
 
 .precio-unitario {
-    font-family: 'Chakra Petch', arial;
     font-size: 2.6vw;
 }
 
 .precio-final {
-    font-family: 'Chakra Petch', arial;
     font-size: 2.9vw;
 }
 
@@ -381,7 +468,6 @@ tfoot {
 }
 
 .total {
-    font-family: 'Chakra Petch', arial;
     font-size: 3.2vw;
     color: #180A41;
 }
@@ -392,33 +478,31 @@ tfoot {
     flex-wrap: wrap;
 }
 
-.box-buy-button {
-    display: flex;
-    align-self: center;
-    margin-top: 25px;
-    font-family: 'Chakra Petch', arial;
-    background-color: #180A41;
-    color: #Fff;
-    padding: 10px 75px;
-    margin-bottom: 10px;
+.buy-button{
+    background-color: #180a41;
+    color: #fff;
+    padding: 10px 32px;
     border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    margin: 15px;
 }
 
-.box-buy-button:hover {
+.buy-button:hover {
     box-shadow: 0px 0px 10px rgb(119, 117, 117);
 }
 
-.box-add-button {
-    display: flex;
-    align-self: center;
-    margin-left: 10px;
-    font-family: 'Chakra Petch', arial;
+.add-button{
     background-color: rgb(110, 110, 237);
-    padding: 10px 64px 10px 64px;
+    color: #fff;
+    padding: 10px 32px;
     border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    margin: 15px;
 }
 
-.box-add-button:hover {
+.add-button:hover {
     box-shadow: 0px 0px 10px rgb(119, 117, 117);
 }
 
@@ -426,13 +510,7 @@ tfoot {
 /* ---------------------------- TABLETS ---------------------------- */
 
 @media (min-width: 481px) {
-    .navbar {
-        display: flex;
-        visibility: visible;
-    }
-    .contenedor-burger {
-        display: none;
-    }
+    /*------carrito de compras------*/
     thead {
         font-size: 12px;
     }
@@ -466,30 +544,53 @@ tfoot {
         flex: 5 1 100%;
         text-align: center;
     }
+
 }
 
 
 /* ----------------- TABLETS en LANDSCAPE / LAPTOPS ----------------- */
 
 @media (min-width: 769px) {
+    .caja-logo-busqueda {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
     .logo-box-normal {
         display: flex;
         justify-content: center;
     }
-    .barra-nav1,
-    .barra-nav2 {
-        display: flex;
+    .logo-box-reduced {
+        display: none;
     }
-    footer {
+    .contenedor-burger {
+        display: none;
+    }
+    .nav-bar {
         display: flex;
-        align-items: center;
+        flex: 1 0 100%;
+        justify-content: space-around;
+    }
+    .barra-nav1 {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .secciones a {
+        margin: 10px;
+        color: #fff;
+    }
+    .secciones:hover {
+        text-shadow: 1px 1px 2px #ebebeb;
+        text-decoration: underline;
+        color: rgb(110, 110, 237);
     }
     .socialIcons {
         display: flex;
         flex-flow: column;
     }
     .box-buy-button {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .box-add-button {
         margin-top: 20px;
@@ -501,10 +602,16 @@ tfoot {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .our-brands {
+        max-width: 70%;
+        margin: auto;
+    }
+
     .pic1 img {
         width: 300px;
         height: 300px;
     }
+
     .popular-item img {
         width: 300px;
         height: 300px;

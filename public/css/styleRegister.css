@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Saira Stencil One', cursive;
+    font-family: 'Chakra Petch', arial;;
 }
 
 .main-register {
@@ -86,10 +88,9 @@
 .inputEmail,
 .inputPassword,
 .inputRePassword {
-    font-family: Roboto;
     height: 35px;
     padding-left: 10px;
-    border: 1, 3px solid rgba(14, 13, 13, 0.3);
+    border: 1 solid rgba(14, 13, 13, 0.3);
     border-radius: 8px;
     transition: all 250ms;
 }
@@ -184,6 +185,7 @@
     .email,
     .password,
     .rePassword {
+      
         display: flex;
         min-width: 600px;
     }

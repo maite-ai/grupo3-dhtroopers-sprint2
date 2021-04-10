@@ -8,6 +8,10 @@
     font-size: 14px;
 }
 
+body {
+    background-color: #f8f1f1;
+}
+
 header {
     background-color: #180A41;
     color: white;
@@ -83,14 +87,14 @@ form i {
     .login-link {
         text-decoration: none;
         background-color: #180a41;
-        color: #03efdd;
+        color: #fff;
         font-size: 20px;
     }
 
     .register-link {
         text-decoration: none;
-        background-color: #180a41;
-        color: rgb(214, 210, 210);
+        background-color: rgb(110, 110, 237);
+        color: #fff;
         font-size: 15px;
     }
 
@@ -98,19 +102,26 @@ form i {
         background-color: #180a41;
         border: none;
         padding: 16px 32px;
-        border-radius: 5px;
+        border-radius: 4px;
         width: 100%;
     }
 
     .button-form .register-button{
-        background-color: #180a41;
+        background-color: rgb(110, 110, 237);
         border: none;
         padding: 6px 10px;
-        border-radius: 5px;
+        border-radius: 4px;
         width: 100%;
         margin-top: 2%; 
     }
 
+    .login-button:hover{
+        box-shadow: 0px 0px 15px gray;
+    }
+
+    .register-button:hover{
+        box-shadow: 0px 0px 15px gray;
+    }
 
 
 footer {
