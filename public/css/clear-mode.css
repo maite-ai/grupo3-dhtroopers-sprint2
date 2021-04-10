@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 * {
     margin: 0;
@@ -76,66 +74,51 @@ main {
 
 /*=========================== CARRUSEL de IMAGENES =====================================*/
 
-.carousel-control.left {
-    background: none;
+.pic-ctn {
+    position: relative;
+    right: 8%;
+    width: 90%;
+    height: 200px;
+    margin: 0.5vh auto auto auto;
 }
 
-.carousel-control.right {
-    background: none;
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
 }
 
-.carousel-control {
+.pic-ctn>img {
     position: absolute;
-    top: 45%;
-    bottom: 0;
-    left: 0;
-    width: 15%;
-    font-size: auto;
-    color: #fff;
-    text-align: center;
-    opacity: 1;
-    text-shadow: none;
+    top: 0;
+    left: calc(35% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
 }
 
-.carousel-control:hover {
-    color: #000;
+img:nth-child(2) {
+    animation-delay: 2s;
 }
 
-.carousel-indicators {
-    bottom: -50px;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #0009;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #16a085;
-    border-radius: 50%;
-}
-
-.carousel-indicators .active {
-    width: 12px;
-    height: 12px;
-    margin: 0;
-    background-color: #16a085;
-}
-
-.carousel-caption {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.4);
+img:nth-child(3) {
+    animation-delay: 4s;
 }
 
 
@@ -227,18 +210,30 @@ h2:hover {
     width: 100%;
 }
 
+.our-brands {
+    display: flex;
+    padding: 10px 0px 15px 0px;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px orange solid;
+}
+
+.brand-item {
+    flex: 1 1 auto;
+    border: solid 2px green;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
 
 /*-----------EMPIEZAN LOS CAMBIOS DE YISUS --> modificado por PEI, sorry YISUS :/----------------------*/
-
-.carrousel {
-    background-color: rgb(110, 110, 237);
-    box-shadow: 0px 0px 8px rgb(175, 157, 192);
-    border-radius: 2px;
-    padding: 50px;
-    margin: 10px;
-    color: white;
-    font-size: 24px;
-}
 
 .detail,
 .gallery-container {
@@ -507,9 +502,6 @@ tfoot {
 /* ---------------------------- TABLETS ---------------------------- */
 
 @media (min-width: 481px) {
-    .carrousel {
-        padding: 80px;
-    }
     /*------carrito de compras------*/
     thead {
         font-size: 12px;
@@ -553,7 +545,7 @@ tfoot {
     .caja-logo-busqueda {
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
     .logo-box-normal {
         display: flex;
@@ -568,22 +560,21 @@ tfoot {
     .nav-bar {
         display: flex;
         flex: 1 0 100%;
-        justify-content: flex-end;
+        justify-content: space-around;
     }
     .barra-nav1 {
         display: flex;
         flex-flow: row;
         justify-content: space-around;
     }
-    .secciones {
+    .secciones a {
         margin: 10px;
+        color: #fff;
     }
     .secciones:hover {
         text-shadow: 1px 1px 2px #ebebeb;
-    }
-    footer {
-        display: flex;
-        align-items: center;
+        text-decoration: underline;
+        color: rgb(110, 110, 237);
     }
     .socialIcons {
         display: flex;
