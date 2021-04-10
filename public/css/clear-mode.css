@@ -35,6 +35,12 @@ header {
     font-size: 12px;
 }
 
+.logo {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .logo-box-normal {
     display: none;
 }
@@ -42,12 +48,6 @@ header {
 .logo-box-reduced {
     display: flex;
     justify-content: center;
-}
-
-.logo {
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .cuadro-busqueda {
@@ -76,10 +76,14 @@ main {
 
 .pic-ctn {
     position: relative;
-    right: 8%;
     width: 90%;
-    height: 200px;
+    height: 130px;
     margin: 0.5vh auto auto auto;
+}
+
+.pic-ctn img {
+    width: 90%;
+    height: 100%;
 }
 
 @keyframes display {
@@ -172,19 +176,22 @@ h2:hover {
     margin-left: 8px;
 }
 
-.pic1 .detail-prod {
-    color: #180A41;
+.pic1 a{
+    text-decoration: none;
     text-align: center;
-    font-size: 14px;
-    margin: 8px;
-    opacity: 0;
+    }
+
+.pic1 a:hover{
+    color: #180A41;
 }
+
 
 .pic1 .detail-prod:hover {
     opacity: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: #180A41;
 }
 
 .pic1,
@@ -201,13 +208,16 @@ h2:hover {
 .popular-item:hover {
     box-shadow: 0px 0px 10px rgb(175, 157, 192);
 }
-
-.pic1 img {
-    width: 100%;
+.popular-item a{
+    text-decoration: none;
+}
+.popular-item a{
+    color: #fff;
+    text-align: center;
 }
 
-.popular-item img {
-    width: 100%;
+.popular-item a:hover{
+    color: #180A41;
 }
 
 .our-brands {
@@ -228,13 +238,8 @@ h2:hover {
     margin: 1%;
 }
 
-.brand-item img{
+.brand-item img {
     width: 100%;
-}
-
-footer {
-    display: flex;
-    align-items: center;
 }
 
 
@@ -244,8 +249,24 @@ footer {
 .gallery-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.pic1,
+.popular-item {
+    width: 250px;
+    height: 350px;
+}
+
+.pic1 img {
+    width: 250px;
+    height: 250px;
+}
+
+.popular-item img {
+    width: 250px;
+    height: 250px;
 }
 
 
@@ -264,34 +285,42 @@ footer {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.contactus-title {
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     line-height: 30px;
 }
 
-.contact-form input{
-    padding: 10px;
+.contact-form label {
+    display: none;
+}
+
+.contact-form input {
+    padding: 2px 10px;
 }
 
 .nombre,
 .email {
     width: 200px;
-    height: 30px;
-    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
 }
-.contact-form textarea{
+
+.contact-form textarea {
     padding: 10px;
 }
 
 .comentario {
+    margin-top: 15px;
     width: 200px;
     border: none;
     border-radius: 4px;
@@ -300,12 +329,17 @@ footer {
 .data,
 .socialIcons,
 .copyright {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
+.copyright {
+    font-size: 10px;
+}
+
 .data-item {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
 }
 
 .data-item-faq {
@@ -328,7 +362,7 @@ footer {
     border: none;
     border-radius: 5px;
     background-color: rgb(110, 110, 237);
-    color:rgb(214, 210, 210);
+    color: rgb(214, 210, 210);
     font-weight: bold;
 }
 
@@ -478,7 +512,7 @@ tfoot {
     flex-wrap: wrap;
 }
 
-.buy-button{
+.buy-button {
     background-color: #180a41;
     color: #fff;
     padding: 10px 32px;
@@ -492,7 +526,7 @@ tfoot {
     box-shadow: 0px 0px 10px rgb(119, 117, 117);
 }
 
-.add-button{
+.add-button {
     background-color: rgb(110, 110, 237);
     color: #fff;
     padding: 10px 32px;
@@ -544,7 +578,31 @@ tfoot {
         flex: 5 1 100%;
         text-align: center;
     }
-
+    /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .pic-ctn {
+        right: 6%;
+        height: 180px;
+    }
+    .detail,
+    .gallery-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .pic1,
+    .popular-item {
+        width: 150px;
+        height: 250px;
+    }
+    .pic1 img {
+        width: 150px;
+        height: 150px;
+    }
+    .popular-item img {
+        width: 150px;
+        height: 150px;
+    }
+    /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
 }
 
 
@@ -585,6 +643,10 @@ tfoot {
         text-decoration: underline;
         color: rgb(110, 110, 237);
     }
+    .pic-ctn {
+        right: 14%;
+        height: 250px;
+    }
     .socialIcons {
         display: flex;
         flex-flow: column;
@@ -606,17 +668,26 @@ tfoot {
         max-width: 70%;
         margin: auto;
     }
-
+    .pic1,
+    .popular-item {
+        width: 300px;
+        height: 400px;
+    }
     .pic1 img {
         width: 300px;
         height: 300px;
     }
-
     .popular-item img {
         width: 300px;
         height: 300px;
     }
     /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .data-item {
+        margin-bottom: 10px;
+    }
+    .contact-form label {
+        display: block;
+    }
 }
 
 
@@ -628,17 +699,30 @@ tfoot {
         align-items: center;
     }
     /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
+    .pic-ctn {
+        right: 19%;
+        height: 350px;
+    }
     .detail,
     .gallery-container {
-        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .pic1 {
+        width: 250px;
+        height: 350px;
     }
     .pic1 img {
-        width: 350px;
+        width: 250px;
+        height: 250px;
+    }
+    .popular-item {
+        width: 250px;
         height: 350px;
     }
     .popular-item img {
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
     }
     /*-----------------------TEMRINAN MÁS CAMBIOS DE YISUS-----------------------*/
 }
