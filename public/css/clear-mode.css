@@ -176,19 +176,22 @@ h2:hover {
     margin-left: 8px;
 }
 
-.pic1 .detail-prod {
-    color: #180A41;
+.pic1 a{
+    text-decoration: none;
     text-align: center;
-    font-size: 14px;
-    margin: 8px;
-    opacity: 0;
+    }
+
+.pic1 a:hover{
+    color: #180A41;
 }
+
 
 .pic1 .detail-prod:hover {
     opacity: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: #180A41;
 }
 
 .pic1,
@@ -204,6 +207,17 @@ h2:hover {
 
 .popular-item:hover {
     box-shadow: 0px 0px 10px rgb(175, 157, 192);
+}
+.popular-item a{
+    text-decoration: none;
+}
+.popular-item a{
+    color: #fff;
+    text-align: center;
+}
+
+.popular-item a:hover{
+    color: #180A41;
 }
 
 .our-brands {
