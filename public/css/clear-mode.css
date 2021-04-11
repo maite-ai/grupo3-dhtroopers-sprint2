@@ -77,8 +77,9 @@ main {
 .pic-ctn {
     position: relative;
     width: 90%;
-    height: 130px;
+    height: 90px;
     margin: 0.5vh auto auto auto;
+    background-size:cover
 }
 
 .pic-ctn img {
@@ -567,7 +568,7 @@ tfoot {
     /*-----------------------EMPIEZAN MÁS CAMBIOS DE YISUS-----------------------*/
     .pic-ctn {
         right: 6%;
-        height: 180px;
+        height: 120px;
     }
     .detail,
     .gallery-container {
